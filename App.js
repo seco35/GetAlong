@@ -1,23 +1,33 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View, Dimensions, StatusBar} from 'react-native';
+import { createStackNavigator } from 'react-navigation';
+import {styles} from './Styles';
+import HelloWorld from './HelloWorld';
+import Hello from './Hello';
+import World from './World';
 
-export default class App extends React.Component {
-    render() {
-        console.log("TEST :)")
-        return (
-            <View style={styles.container}>
-                <Text>Öffnet App.js um die App zu bearbeiten!</Text>
-                <Text>Veränderungen die in App.js durchgeführt werden, tauchen sofort hier auf.</Text>
-                </View>
-        );
+
+
+
+
+
+// WARNING: ISMOUNTED IS DEPRECATED SHOWS UP, WHEN USING THIS. IS A BUG IN REACT-native.
+// THIS IS A WORKAROUND, TO GET RID OF THE YELLOWBOX WARNING
+import { YellowBox } from 'react-native';
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
+
+
+export default createStackNavigator(
+    {
+
+        Home: HelloWorld,
+        Hello: Hello,
+        World: World,
+
+    },
+    {
+        navigationOptions: {
+               header: null
+           }
     }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+);
