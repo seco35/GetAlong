@@ -1,0 +1,3 @@
+rootProject.name = 'GetAlong'
+
+include ':app'

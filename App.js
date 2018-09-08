@@ -2,15 +2,15 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
+    render() {
+        console.log("TEST :)")
+        return (
+            <View style={styles.container}>
+                <Text>Öffnet App.js um die App zu bearbeiten!</Text>
+                <Text>Veränderungen die in App.js durchgeführt werden, tauchen sofort hier auf.</Text>
+                </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
