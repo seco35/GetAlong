@@ -24,7 +24,7 @@ export default class HelloWorld extends React.Component {
             <View style={styles.container}>
             <StatusBar hidden/>
                 <TouchableHighlight style={[styles.myViews, {backgroundColor:'skyblue'}]} onPress={this.goToHello}>
-                    <Text style={styles.texts}> Hallo </Text>
+                    <Text style={styles.texts}> hi </Text>
                 </TouchableHighlight>
                 <TouchableHighlight style={[styles.myViews, {backgroundColor:'#417aa1'}]} onPress={this.goToWorld}>
                     <Text style={styles.texts}> Welt </Text>
