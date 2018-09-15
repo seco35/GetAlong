@@ -13,7 +13,7 @@ export default class Hello extends React.Component {
 
     goToMainView(){
         const {navigate} = this.props.navigation;
-        navigate("Home");
+        navigate("HelloWorld");
     }
     render() {
         return (

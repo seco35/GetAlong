@@ -5,7 +5,7 @@ import {styles} from './Styles';
 import HelloWorld from './HelloWorld';
 import Hello from './Hello';
 import World from './World';
-
+import HomeScreen from './HomeScreen';
 
 
 
@@ -19,8 +19,8 @@ YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTIm
 
 export default createStackNavigator(
     {
-
-        Home: HelloWorld,
+        HelloWorld: HelloWorld,
+        MapView: HomeScreen,
         Hello: Hello,
         World: World,
 

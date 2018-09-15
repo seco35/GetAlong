@@ -1,6 +1,8 @@
 import React from 'react';
-import {Text, View, Dimensions, StatusBar, TouchableOpacity, TouchableHighlight} from 'react-native';
+import {Text, View, Dimensions, StatusBar, TouchableOpacity, TouchableHighlight, YellowBox} from 'react-native';
 import {styles} from './Styles';
+
+YellowBox.ignoreWarnings(['Class RCTCxxModule']);
 
 export default class HelloWorld extends React.Component {
     constructor(props){

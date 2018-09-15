@@ -12,7 +12,7 @@ export default class World extends React.Component {
 
     goToMainView(){
         const {navigate} = this.props.navigation;
-        navigate("Home");
+        navigate("HelloWorld");
     }
 
     render() {
