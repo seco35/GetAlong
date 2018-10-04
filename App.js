@@ -19,8 +19,8 @@ YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTIm
 
 export default createStackNavigator(
     {
-        HelloWorld: HelloWorld,
         MapView: HomeScreen,
+        HelloWorld: HelloWorld,
         Hello: Hello,
         World: World,
 
